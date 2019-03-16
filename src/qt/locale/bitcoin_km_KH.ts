@@ -88,10 +88,10 @@
     </message>
 </context>
 <context>
-    <name>BitcoinGUI</name>
+    <name>BitzenyGUI</name>
     <message>
-        <source>Send coins to a Bitcoin address</source>
-        <translation>ផ្ញើកាក់ទៅកាន់ អាសយដ្ឋាន Bitcoin មួយ</translation>
+        <source>Send coins to a Bitzeny address</source>
+        <translation>ផ្ញើកាក់ទៅកាន់ អាសយដ្ឋាន Bitzeny មួយ</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -210,6 +210,6 @@
     </message>
     </context>
 <context>
-    <name>bitcoin-core</name>
+    <name>bitzeny-core</name>
     </context>
 </TS>

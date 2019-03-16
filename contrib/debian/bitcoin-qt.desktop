@@ -1,14 +1,14 @@
 [Desktop Entry]
 Version=1.0
-Name=Bitcoin Core
-Comment=Connect to the Bitcoin P2P Network
-Comment[de]=Verbinde mit dem Bitcoin peer-to-peer Netzwerk
-Comment[fr]=Bitcoin, monnaie virtuelle cryptographique pair à pair
-Comment[tr]=Bitcoin, eşten eşe kriptografik sanal para birimi
-Exec=bitcoin-qt %u
+Name=Bitzeny Core
+Comment=Connect to the Bitzeny P2P Network
+Comment[de]=Verbinde mit dem Bitzeny peer-to-peer Netzwerk
+Comment[fr]=Bitzeny, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Bitzeny, eşten eşe kriptografik sanal para birimi
+Exec=bitzeny-qt %u
 Terminal=false
 Type=Application
-Icon=bitcoin128
-MimeType=x-scheme-handler/bitcoin;
+Icon=bitzeny128
+MimeType=x-scheme-handler/bitzeny;
 Categories=Office;Finance;
-StartupWMClass=Bitcoin-qt
+StartupWMClass=Bitzeny-qt

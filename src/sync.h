@@ -1,10 +1,10 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
-// Copyright (c) 2009-2017 The Bitcoin Core developers
+// Copyright (c) 2009-2017 The Bitzeny Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_SYNC_H
-#define BITCOIN_SYNC_H
+#ifndef BITZENY_SYNC_H
+#define BITZENY_SYNC_H
 
 #include <threadsafety.h>
 
@@ -287,4 +287,4 @@ public:
     }
 };
 
-#endif // BITCOIN_SYNC_H
+#endif // BITZENY_SYNC_H

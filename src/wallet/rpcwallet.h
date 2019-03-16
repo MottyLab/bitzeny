@@ -1,9 +1,9 @@
-// Copyright (c) 2016-2017 The Bitcoin Core developers
+// Copyright (c) 2016-2017 The Bitzeny Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_WALLET_RPCWALLET_H
-#define BITCOIN_WALLET_RPCWALLET_H
+#ifndef BITZENY_WALLET_RPCWALLET_H
+#define BITZENY_WALLET_RPCWALLET_H
 
 #include <string>
 
@@ -25,4 +25,4 @@ std::string HelpRequiringPassphrase(CWallet *);
 void EnsureWalletIsUnlocked(CWallet *);
 bool EnsureWalletIsAvailable(CWallet *, bool avoidException);
 
-#endif //BITCOIN_WALLET_RPCWALLET_H
+#endif //BITZENY_WALLET_RPCWALLET_H

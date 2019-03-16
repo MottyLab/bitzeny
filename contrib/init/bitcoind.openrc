@@ -2,41 +2,41 @@
 
 # backward compatibility for existing gentoo layout 
 #
-if [ -d "/var/lib/bitcoin/.bitcoin" ]; then
-	BITCOIND_DEFAULT_DATADIR="/var/lib/bitcoin/.bitcoin"
+if [ -d "/var/lib/bitzeny/.bitzeny" ]; then
+	BITZENYD_DEFAULT_DATADIR="/var/lib/bitzeny/.bitzeny"
 else
-	BITCOIND_DEFAULT_DATADIR="/var/lib/bitcoind"
+	BITZENYD_DEFAULT_DATADIR="/var/lib/bitzenyd"
 fi
 
-BITCOIND_CONFIGFILE=${BITCOIND_CONFIGFILE:-/etc/bitcoin/bitcoin.conf}
-BITCOIND_PIDDIR=${BITCOIND_PIDDIR:-/var/run/bitcoind}
-BITCOIND_PIDFILE=${BITCOIND_PIDFILE:-${BITCOIND_PIDDIR}/bitcoind.pid}
-BITCOIND_DATADIR=${BITCOIND_DATADIR:-${BITCOIND_DEFAULT_DATADIR}}
-BITCOIND_USER=${BITCOIND_USER:-${BITCOIN_USER:-bitcoin}}
-BITCOIND_GROUP=${BITCOIND_GROUP:-bitcoin}
-BITCOIND_BIN=${BITCOIND_BIN:-/usr/bin/bitcoind}
-BITCOIND_NICE=${BITCOIND_NICE:-${NICELEVEL:-0}}
-BITCOIND_OPTS="${BITCOIND_OPTS:-${BITCOIN_OPTS}}"
+BITZENYD_CONFIGFILE=${BITZENYD_CONFIGFILE:-/etc/bitzeny/bitzeny.conf}
+BITZENYD_PIDDIR=${BITZENYD_PIDDIR:-/var/run/bitzenyd}
+BITZENYD_PIDFILE=${BITZENYD_PIDFILE:-${BITZENYD_PIDDIR}/bitzenyd.pid}
+BITZENYD_DATADIR=${BITZENYD_DATADIR:-${BITZENYD_DEFAULT_DATADIR}}
+BITZENYD_USER=${BITZENYD_USER:-${BITZENY_USER:-bitzeny}}
+BITZENYD_GROUP=${BITZENYD_GROUP:-bitzeny}
+BITZENYD_BIN=${BITZENYD_BIN:-/usr/bin/bitzenyd}
+BITZENYD_NICE=${BITZENYD_NICE:-${NICELEVEL:-0}}
+BITZENYD_OPTS="${BITZENYD_OPTS:-${BITZENY_OPTS}}"
 
-name="Bitcoin Core Daemon"
-description="Bitcoin cryptocurrency P2P network daemon"
+name="Bitzeny Core Daemon"
+description="Bitzeny cryptocurrency P2P network daemon"
 
-command="/usr/bin/bitcoind"
-command_args="-pid=\"${BITCOIND_PIDFILE}\" \
-		-conf=\"${BITCOIND_CONFIGFILE}\" \
-		-datadir=\"${BITCOIND_DATADIR}\" \
+command="/usr/bin/bitzenyd"
+command_args="-pid=\"${BITZENYD_PIDFILE}\" \
+		-conf=\"${BITZENYD_CONFIGFILE}\" \
+		-datadir=\"${BITZENYD_DATADIR}\" \
 		-daemon \
-		${BITCOIND_OPTS}"
+		${BITZENYD_OPTS}"
 
-required_files="${BITCOIND_CONFIGFILE}"
-start_stop_daemon_args="-u ${BITCOIND_USER} \
-			-N ${BITCOIND_NICE} -w 2000"
-pidfile="${BITCOIND_PIDFILE}"
+required_files="${BITZENYD_CONFIGFILE}"
+start_stop_daemon_args="-u ${BITZENYD_USER} \
+			-N ${BITZENYD_NICE} -w 2000"
+pidfile="${BITZENYD_PIDFILE}"
 
 # The retry schedule to use when stopping the daemon. Could be either
 # a timeout in seconds or multiple signal/timeout pairs (like
 # "SIGKILL/180 SIGTERM/300")
-retry="${BITCOIND_SIGTERM_TIMEOUT}"
+retry="${BITZENYD_SIGTERM_TIMEOUT}"
 
 depend() {
 	need localmount net
@@ -50,29 +50,29 @@ start_pre() {
 	checkpath \
 	-d \
 	--mode 0750 \
-	--owner "${BITCOIND_USER}:${BITCOIND_GROUP}" \
-	"${BITCOIND_DATADIR}"
+	--owner "${BITZENYD_USER}:${BITZENYD_GROUP}" \
+	"${BITZENYD_DATADIR}"
 
 	checkpath \
 	-d \
 	--mode 0755 \
-	--owner "${BITCOIND_USER}:${BITCOIND_GROUP}" \
-	"${BITCOIND_PIDDIR}"
+	--owner "${BITZENYD_USER}:${BITZENYD_GROUP}" \
+	"${BITZENYD_PIDDIR}"
 
 	checkpath -f \
-	-o ${BITCOIND_USER}:${BITCOIND_GROUP} \
+	-o ${BITZENYD_USER}:${BITZENYD_GROUP} \
 	-m 0660 \
-	${BITCOIND_CONFIGFILE}
+	${BITZENYD_CONFIGFILE}
 
 	checkconfig || return 1
 }
 
 checkconfig()
 {
-	if ! grep -qs '^rpcpassword=' "${BITCOIND_CONFIGFILE}" ; then
+	if ! grep -qs '^rpcpassword=' "${BITZENYD_CONFIGFILE}" ; then
 		eerror ""
-		eerror "ERROR: You must set a secure rpcpassword to run bitcoind."
-		eerror "The setting must appear in ${BITCOIND_CONFIGFILE}"
+		eerror "ERROR: You must set a secure rpcpassword to run bitzenyd."
+		eerror "The setting must appear in ${BITZENYD_CONFIGFILE}"
 		eerror ""
 		eerror "This password is security critical to securing wallets "
 		eerror "and must not be the same as the rpcuser setting."
@@ -84,7 +84,7 @@ checkconfig()
 		eerror "It is recommended that you also set alertnotify so you are "
 		eerror "notified of problems:"
 		eerror ""
-		eerror "ie: alertnotify=echo %%s | mail -s \"Bitcoin Alert\"" \
+		eerror "ie: alertnotify=echo %%s | mail -s \"Bitzeny Alert\"" \
 			"admin@foo.com"
 		eerror ""
 		return 1

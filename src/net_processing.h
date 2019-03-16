@@ -1,10 +1,10 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
-// Copyright (c) 2009-2017 The Bitcoin Core developers
+// Copyright (c) 2009-2017 The Bitzeny Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_NET_PROCESSING_H
-#define BITCOIN_NET_PROCESSING_H
+#ifndef BITZENY_NET_PROCESSING_H
+#define BITZENY_NET_PROCESSING_H
 
 #include <net.h>
 #include <validationinterface.h>
@@ -81,4 +81,4 @@ bool GetNodeStateStats(NodeId nodeid, CNodeStateStats &stats);
 /** Increase a node's misbehavior score. */
 void Misbehaving(NodeId nodeid, int howmuch);
 
-#endif // BITCOIN_NET_PROCESSING_H
+#endif // BITZENY_NET_PROCESSING_H

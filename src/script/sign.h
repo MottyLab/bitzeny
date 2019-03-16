@@ -1,10 +1,10 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
-// Copyright (c) 2009-2017 The Bitcoin Core developers
+// Copyright (c) 2009-2017 The Bitzeny Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_SCRIPT_SIGN_H
-#define BITCOIN_SCRIPT_SIGN_H
+#ifndef BITZENY_SCRIPT_SIGN_H
+#define BITZENY_SCRIPT_SIGN_H
 
 #include <script/interpreter.h>
 
@@ -87,4 +87,4 @@ void UpdateTransaction(CMutableTransaction& tx, unsigned int nIn, const Signatur
  * Solvability is unrelated to whether we consider this output to be ours. */
 bool IsSolvable(const CKeyStore& store, const CScript& script);
 
-#endif // BITCOIN_SCRIPT_SIGN_H
+#endif // BITZENY_SCRIPT_SIGN_H

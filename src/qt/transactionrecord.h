@@ -1,9 +1,9 @@
-// Copyright (c) 2011-2017 The Bitcoin Core developers
+// Copyright (c) 2011-2017 The Bitzeny Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_QT_TRANSACTIONRECORD_H
-#define BITCOIN_QT_TRANSACTIONRECORD_H
+#ifndef BITZENY_QT_TRANSACTIONRECORD_H
+#define BITZENY_QT_TRANSACTIONRECORD_H
 
 #include <amount.h>
 #include <uint256.h>
@@ -141,4 +141,4 @@ public:
     bool statusUpdateNeeded() const;
 };
 
-#endif // BITCOIN_QT_TRANSACTIONRECORD_H
+#endif // BITZENY_QT_TRANSACTIONRECORD_H

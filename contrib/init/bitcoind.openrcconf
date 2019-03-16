@@ -1,33 +1,33 @@
-# /etc/conf.d/bitcoind: config file for /etc/init.d/bitcoind
+# /etc/conf.d/bitzenyd: config file for /etc/init.d/bitzenyd
 
 # Config file location
-#BITCOIND_CONFIGFILE="/etc/bitcoin/bitcoin.conf"
+#BITZENYD_CONFIGFILE="/etc/bitzeny/bitzeny.conf"
 
-# What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
-#BITCOIND_PIDDIR="/var/run/bitcoind"
+# What directory to write pidfile to?  (created and owned by $BITZENYD_USER)
+#BITZENYD_PIDDIR="/var/run/bitzenyd"
 
 # What filename to give the pidfile
-#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/bitcoind.pid"
+#BITZENYD_PIDFILE="${BITZENYD_PIDDIR}/bitzenyd.pid"
 
-# Where to write bitcoind data (be mindful that the blockchain is large)
-#BITCOIND_DATADIR="/var/lib/bitcoind"
+# Where to write bitzenyd data (be mindful that the blockchain is large)
+#BITZENYD_DATADIR="/var/lib/bitzenyd"
 
-# User and group to own bitcoind process
-#BITCOIND_USER="bitcoin"
-#BITCOIND_GROUP="bitcoin"
+# User and group to own bitzenyd process
+#BITZENYD_USER="bitzeny"
+#BITZENYD_GROUP="bitzeny"
 
-# Path to bitcoind executable
-#BITCOIND_BIN="/usr/bin/bitcoind"
+# Path to bitzenyd executable
+#BITZENYD_BIN="/usr/bin/bitzenyd"
 
-# Nice value to run bitcoind under
-#BITCOIND_NICE=0
+# Nice value to run bitzenyd under
+#BITZENYD_NICE=0
 
 # Additional options (avoid -conf and -datadir, use flags above)
-#BITCOIND_OPTS=""
+#BITZENYD_OPTS=""
 
-# The timeout in seconds OpenRC will wait for bitcoind to terminate
+# The timeout in seconds OpenRC will wait for bitzenyd to terminate
 # after a SIGTERM has been raised.
 # Note that this will be mapped as argument to start-stop-daemon's
 # '--retry' option, which means you can specify a retry schedule
 # here. For more information see man 8 start-stop-daemon.
-BITCOIND_SIGTERM_TIMEOUT=60
+BITZENYD_SIGTERM_TIMEOUT=60
