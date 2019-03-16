@@ -136,7 +136,7 @@
     </message>
     <message>
         <source>Warning: Invalid Bitzeny address</source>
-        <translation>警告：比特币地址无效</translation>
+        <translation>警告：Bitzeny地址无效</translation>
     </message>
     </context>
 <context>
