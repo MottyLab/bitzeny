@@ -3,7 +3,7 @@ Bitzeny Core integration/staging tree
 
 [![Build Status](https://travis-ci.org/bitzeny/bitzeny.svg?branch=master)](https://travis-ci.org/bitzeny/bitzeny)
 
-https://bitzenycore.org
+https://bitcoincore.org
 
 What is Bitzeny?
 ----------------
@@ -16,7 +16,7 @@ software which enables the use of this currency.
 
 For more information, as well as an immediately useable, binary version of
 the Bitzeny Core software, see https://bitzeny.org/en/download, or read the
-[original whitepaper](https://bitzenycore.org/bitzeny.pdf).
+[original whitepaper](https://bitcoincore.org/bitzeny.pdf).
 
 License
 -------

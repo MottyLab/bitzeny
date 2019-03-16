@@ -1,6 +1,6 @@
 Bitzeny Core version *0.15.1* is now available from:
 
-  <https://bitzenycore.org/bin/bitzeny-core-0.15.1/>
+  <https://bitcoincore.org/bin/bitzeny-core-0.15.1/>
 
 or
 
@@ -15,7 +15,7 @@ Please report bugs using the issue tracker at GitHub:
 
 To receive security and update notifications, please subscribe to:
 
-  <https://bitzenycore.org/en/list/announcements/join/>
+  <https://bitcoincore.org/en/list/announcements/join/>
 
 How to Upgrade
 ==============
