@@ -274,7 +274,18 @@ crypto_libbitzeny_crypto_a_SOURCES = \
   crypto/sha256.cpp \
   crypto/sha256.h \
   crypto/sha512.cpp \
-  crypto/sha512.h
+  crypto/sha512.h \
+  crypto/yescrypt-0.5/yescrypt.c
+
+noinst_HEADERS = \
+  crypto/yescrypt-0.5/sha256.h \
+  crypto/yescrypt-0.5/sha256_c.h \
+  crypto/yescrypt-0.5/sysendian.h \
+  crypto/yescrypt-0.5/yescrypt.h \
+  crypto/yescrypt-0.5/yescrypt-best_c.h \
+  crypto/yescrypt-0.5/yescrypt-opt_c.h \
+  crypto/yescrypt-0.5/yescrypt-platform_c.h \
+  crypto/yescrypt-0.5/yescrypt-simd_c.h
 
 if USE_ASM
 crypto_libbitzeny_crypto_a_SOURCES += crypto/sha256_sse4.cpp
