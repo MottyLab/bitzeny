@@ -7,7 +7,7 @@ architectures:
 packages:
 - "faketime"
 remotes:
-- "url": "https://github.com/bitzeny-core/bitzeny-detached-sigs.git"
+- "url": "https://github.com/bitcoin-core/bitcoin-detached-sigs.git"
   "dir": "signature"
 files:
 - "bitzeny-osx-unsigned.tar.gz"

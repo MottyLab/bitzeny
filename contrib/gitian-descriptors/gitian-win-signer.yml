@@ -8,7 +8,7 @@ packages:
 - "libssl-dev"
 - "autoconf"
 remotes:
-- "url": "https://github.com/bitzeny-core/bitzeny-detached-sigs.git"
+- "url": "https://github.com/bitcoin-core/bitcoin-detached-sigs.git"
   "dir": "signature"
 files:
 - "osslsigncode-1.7.1.tar.gz"

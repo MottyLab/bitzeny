@@ -28,7 +28,7 @@ packages:
 - "ca-certificates"
 - "python"
 remotes:
-- "url": "https://github.com/bitzeny/bitzeny.git"
+- "url": "https://github.com/MottyLab/bitzeny.git"
   "dir": "bitzeny"
 files: []
 script: |
