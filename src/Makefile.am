@@ -257,6 +257,7 @@ libbitzeny_wallet_a_SOURCES = \
 # crypto primitives library
 crypto_libbitzeny_crypto_a_CPPFLAGS = $(AM_CPPFLAGS)
 crypto_libbitzeny_crypto_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+crypto_libbitzeny_crypto_a_CFLAGS = $(AM_CFLAGS) $(PIE_FLAGS) -fomit-frame-pointer
 crypto_libbitzeny_crypto_a_SOURCES = \
   crypto/aes.cpp \
   crypto/aes.h \
