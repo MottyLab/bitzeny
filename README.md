@@ -1,9 +1,10 @@
 Bitzeny Core integration/staging tree
 =====================================
 
-[![Build Status](https://travis-ci.org/bitzeny/bitzeny.svg?branch=master)](https://travis-ci.org/bitzeny/bitzeny)
+How to Build
+------------
 
-https://bitcoincore.org
+[GITIAN BUILD(Linux, Windows, OSX)](./doc/gitian-building.md)
 
 What is Bitzeny?
 ----------------
@@ -15,8 +16,7 @@ out collectively by the network. Bitzeny Core is the name of open source
 software which enables the use of this currency.
 
 For more information, as well as an immediately useable, binary version of
-the Bitzeny Core software, see https://bitzeny.org/en/download, or read the
-[original whitepaper](https://bitcoincore.org/bitzeny.pdf).
+the Bitzeny Core software, see https://github.com/MottyLab/bitzeny/releases .
 
 License
 -------
@@ -28,7 +28,7 @@ Development Process
 -------------------
 
 The `master` branch is regularly built and tested, but is not guaranteed to be
-completely stable. [Tags](https://github.com/bitzeny/bitzeny/tags) are created
+completely stable. [Tags](https://github.com/MottyLab/bitzeny/tags) are created
 regularly to indicate new official, stable release versions of Bitzeny Core.
 
 The contribution workflow is described in [CONTRIBUTING.md](CONTRIBUTING.md).
@@ -79,4 +79,4 @@ Translations are periodically pulled from Transifex and merged into the git repo
 **Important**: We do not accept translation changes as GitHub pull requests because the next
 pull from Transifex would automatically overwrite them again.
 
-Translators should also subscribe to the [mailing list](https://groups.google.com/forum/#!forum/bitzeny-translators).
+Translators should also subscribe to the [mailing list](https://groups.google.com/forum/#!forum/bitcoin-translators).
