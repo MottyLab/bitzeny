@@ -55,7 +55,6 @@
         <file alias="is">locale/bitzeny_is.qm</file>
         <file alias="it_IT">locale/bitzeny_it_IT.qm</file>
         <file alias="it">locale/bitzeny_it.qm</file>
-        <file alias="ja_JP">locale/bitzeny_ja_JP.qm</file>
         <file alias="ja">locale/bitzeny_ja.qm</file>
         <file alias="ka">locale/bitzeny_ka.qm</file>
         <file alias="kk_KZ">locale/bitzeny_kk_KZ.qm</file>
