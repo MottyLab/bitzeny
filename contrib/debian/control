@@ -27,8 +27,8 @@ Build-Depends: debhelper,
  libzmq3-dev
 Standards-Version: 3.9.2
 Homepage: https://bitzeny.tech/
-Vcs-Git: git://github.com/BitzenyCoreDevelopers/bitzeny.git
-Vcs-Browser: https://github.com/BitzenyCoreDevelopers/bitzeny
+Vcs-Git: git://github.com/bitzenyPlus/BitZenyPlus.git
+Vcs-Browser: https://github.com/bitzenyPlus/BitZenyPlus
 
 Package: bitzenyd
 Architecture: any
