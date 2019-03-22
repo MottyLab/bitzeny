@@ -172,7 +172,7 @@
         <translation>ウォレットの暗号化を確認する</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BitzenyS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITZENYS&lt;/b&gt;!</source>
         <translation>警告：　ウォレットを暗号化した後にパスフレーズを忘れてしまった場合、&lt;b&gt;あなたのビットゼニーはすべて失われます&lt;/b&gt;!</translation>
     </message>
     <message>
@@ -184,7 +184,7 @@
         <translation>ウォレットは暗号化されました</translation>
     </message>
     <message>
-        <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your Bitzenys from being stolen by malware infecting your computer.</source>
+        <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your bitzenys from being stolen by malware infecting your computer.</source>
         <translation>暗号化の処理を完了させるため %1 をいますぐ終了します。ウォレットの暗号化は、コンピュータに感染したマルウェアなどによるビットゼニーの盗難から完全に守ることはできないことにご注意ください。</translation>
     </message>
     <message>
@@ -430,7 +430,7 @@
         <translation>使用した受取用アドレスとラベルのリストを表示する</translation>
     </message>
     <message>
-        <source>Open a Bitzeny: URI or payment request</source>
+        <source>Open a bitzeny: URI or payment request</source>
         <translation>ビットゼニーURIまたは支払い請求を開く</translation>
     </message>
     <message>
@@ -908,11 +908,11 @@
         <translation>フォーム</translation>
     </message>
     <message>
-        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the Bitzeny network, as detailed below.</source>
+        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the bitzeny network, as detailed below.</source>
         <translation>最近の取引はまだ確認できません。ウォレットの残高は正しくない可能性があります。この情報はビットゼニーネットワークへの同期が完了すると正しくなります。詳細は下記を参照してください。</translation>
     </message>
     <message>
-        <source>Attempting to spend Bitzenys that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <source>Attempting to spend bitzenys that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
         <translation>まだ表示されていない取引が影響するビットゼニーを使用すると、ネットワークにて認証されません。</translation>
     </message>
     <message>
@@ -2330,7 +2330,7 @@
         <translation>この項目を削除する</translation>
     </message>
     <message>
-        <source>The fee will be deducted from the amount being sent. The recipient will receive less Bitzenys than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
+        <source>The fee will be deducted from the amount being sent. The recipient will receive less bitzenys than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
         <translation>送金額から手数料が差し引かれます。受取人は金額フィールドで指定した額よりも少ないビットゼニーを受け取ります。受取人が複数いる場合には、手数料は均等割されます。</translation>
     </message>
     <message>
@@ -2403,7 +2403,7 @@
         <translation>メッセージの署名</translation>
     </message>
     <message>
-        <source>You can sign messages/agreements with your addresses to prove you can receive Bitzenys sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
+        <source>You can sign messages/agreements with your addresses to prove you can receive bitzenys sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
         <translation>あなたが所有しているアドレスを使用してメッセージや合意事項に署名をすることで、送金したビットゼニーを受け取ることが可能なことを証明できます。フィッシング攻撃により不正にあなたの識別情報で署名させられてしまうことを防ぐために、不明確なものやランダムなものに対して署名しないように注意してください。詳細が明らかで合意可能なメッセージにのみ署名して下さい。</translation>
     </message>
     <message>
