@@ -418,7 +418,7 @@
         <translation>タブ ツールバー</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and Bitzeny: URIs)</source>
+        <source>Request payments (generates QR codes and bitzeny: URIs)</source>
         <translation>支払いを請求する (QRコードとビットゼニーURIを生成する)</translation>
     </message>
     <message>
@@ -1316,7 +1316,7 @@
         <translation>支払い請求のエラー</translation>
     </message>
     <message>
-        <source>Cannot start Bitzeny: click-to-pay handler</source>
+        <source>Cannot start bitzeny: click-to-pay handler</source>
         <translation>ビットゼニーを起動できません： click-to-pay handler</translation>
     </message>
     <message>
@@ -2095,7 +2095,7 @@
         <translation>閉じる</translation>
     </message>
     <message>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for Bitzeny transactions than the network can process.</source>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for bitzeny transactions than the network can process.</source>
         <translation>ブロックチェーンの容量に比べて取引の需要が少ないうちは最小手数料のみの支払で十分です。しかしネットワークが処理しきれないほどビットゼニーの取引需要が生じた場合には、いつまでも取引が検証されない可能性があることに注意してください。</translation>
     </message>
     <message>
@@ -2358,7 +2358,7 @@
         <translation>このアドレスに対するラベルを入力すると送金先アドレスのリストに登録されます</translation>
     </message>
     <message>
-        <source>A message that was attached to the Bitzeny: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Bitzeny network.</source>
+        <source>A message that was attached to the bitzeny: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Bitzeny network.</source>
         <translation>ビットゼニーURIに添付されていたメッセージです。これは参照用として取引と一緒にに記録されます。注意： このメッセージはビットゼニーネットワークを通して送信されるわけではありません。</translation>
     </message>
     <message>
@@ -3098,7 +3098,7 @@
     </message>
 </context>
 <context>
-    <name>Bitzeny-core</name>
+    <name>bitzeny-core</name>
     <message>
         <source>Options:</source>
         <translation>オプション:</translation>
