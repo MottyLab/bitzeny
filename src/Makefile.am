@@ -100,6 +100,7 @@ BITZENY_CORE_H = \
   core_memusage.h \
   cuckoocache.h \
   fs.h \
+  hashdb.h \
   httprpc.h \
   httpserver.h \
   indirectmap.h \
@@ -194,6 +195,7 @@ libbitzeny_server_a_SOURCES = \
   chain.cpp \
   checkpoints.cpp \
   consensus/tx_verify.cpp \
+  hashdb.cpp \
   httprpc.cpp \
   httpserver.cpp \
   init.cpp \

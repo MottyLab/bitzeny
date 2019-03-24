@@ -17,6 +17,7 @@
 #include <compat/sanity.h>
 #include <consensus/validation.h>
 #include <fs.h>
+#include <hashdb.h>
 #include <httpserver.h>
 #include <httprpc.h>
 #include <key.h>
@@ -247,6 +248,8 @@ void Shutdown()
         pcoinscatcher.reset();
         pcoinsdbview.reset();
         pblocktree.reset();
+        delete phashdb;
+        phashdb = nullptr;
     }
 #ifdef ENABLE_WALLET
     StopWallets();
@@ -1432,6 +1435,8 @@ bool AppInitMain()
                 // fails if it's still open from the previous loop. Close it first:
                 pblocktree.reset();
                 pblocktree.reset(new CBlockTreeDB(nBlockTreeDBCache, false, fReset));
+                delete phashdb;
+                phashdb = new CHashDB(nBlockTreeDBCache, false, fReset);
 
                 if (fReset) {
                     pblocktree->WriteReindexing(true);
